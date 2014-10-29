@@ -5,7 +5,8 @@ vote_shimanekko_2014_mock_server
 1. configs.sample をconfigs にリネームし、email@example.com:password:ユーザエージェントの書式でアカウント情報を書き込みます。 複数行書き込むことができます。
   
 2. vote_shimanekko_2014のvote.rb内の32行目を以下のように変更します。
-start_page = account[:agent].get('http://0.0.0.0:4567/vote')
+
+<code>start_page = account[:agent].get('http://0.0.0.0:4567/vote')</code>
 
 ###sinatraの設定
 1.このプロジェクトのrootディレクトリから、ターミナル上で、  
